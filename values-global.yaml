@@ -43,28 +43,26 @@ regionalDR:
     clusters: # Pair of clusters, make sure to create each in a different region
       primary:
         name: ocp-primary
-        version: 4.14.12
-        # See OpenShift documentation for install config spec
-        # https://docs.openshift.com/container-platform/4.14/installing/installing_aws/installing-aws-customizations.html
+        version: 4.20.8
         install_config:
           apiVersion: v1
           metadata:
             name: ocp-primary
-          baseDomain: example-domain.com
+          baseDomain: sandbox307.opentlc.com
           controlPlane:
             name: master
-            replicas: 3
+            replicas: 1
             platform:
               aws:
-                type: m5.2xlarge
+                type: m6i.2xlarge
                 zones:
                   - eu-central-1a
           compute:
             - name: worker
-              replicas: 5
+              replicas: 3
               platform:
                 aws:
-                  type: m5.2xlarge
+                  type: m6i.2xlarge
                   zones:
                     - eu-central-1a
           networking:
@@ -87,26 +85,26 @@ regionalDR:
           pullSecret: ""
       secondary:
         name: ocp-secondary
-        version: 4.14.12
+        version: 4.20.8
         install_config:
           apiVersion: v1
           metadata:
             name: ocp-secondary
-          baseDomain: your.basedomain.com
+          baseDomain: sandbox307.opentlc.com
           controlPlane:
             name: master
-            replicas: 3
+            replicas: 1
             platform:
               aws:
-                type: m5.2xlarge
+                type: m6i.2xlarge
                 zones:
                   - eu-central-1a
           compute:
             - name: worker
-              replicas: 5
+              replicas: 3
               platform:
                 aws:
-                  type: m5.2xlarge
+                  type: m6i.2xlarge
                   zones:
                     - eu-central-1a
           networking:
