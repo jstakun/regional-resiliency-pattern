@@ -71,7 +71,7 @@ regionalDR:
                 hostPrefix: 23
             machineNetwork:
               - cidr: 10.0.0.0/16
-            networkType: OpenShiftSDN
+            networkType: OVNKubernetes
             serviceNetwork:
               - 172.30.0.0/16
           platform:
@@ -113,7 +113,7 @@ regionalDR:
                 hostPrefix: 23
             machineNetwork:
               - cidr: 10.1.0.0/16
-            networkType: OpenShiftSDN
+            networkType: OVNKubernetes
             serviceNetwork:
               - 172.31.0.0/16
           platform:
@@ -130,3 +130,4 @@ regionalDR:
     intervals:
       - 1m
       - 2m
+      - 5m
