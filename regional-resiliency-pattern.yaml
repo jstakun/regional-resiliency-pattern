@@ -1,0 +1,15 @@
+apiVersion: gitops.hybrid-cloud-patterns.io/v1alpha1
+kind: Pattern
+metadata:
+  name: regional-resiliency-pattern
+  namespace: openshift-operators
+spec:
+  clusterGroupName: hub
+  gitSpec:
+    inClusterGitServer: false
+    pollInterval: 180
+    targetRepo: 'https://github.com/jstakun/regional-resiliency-pattern.git'
+    targetRevision: main
+  multiSourceConfig:
+    clusterGroupChartGitRevision: main
+    enabled: false
