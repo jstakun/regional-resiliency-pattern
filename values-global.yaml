@@ -48,7 +48,7 @@ regionalDR:
           apiVersion: v1
           metadata:
             name: ocp-primary
-          baseDomain: sandbox307.opentlc.com
+          baseDomain: sandbox3331.opentlc.com
           controlPlane:
             name: master
             replicas: 3
@@ -86,7 +86,7 @@ regionalDR:
           apiVersion: v1
           metadata:
             name: ocp-secondary
-          baseDomain: sandbox307.opentlc.com
+          baseDomain: sandbox3331.opentlc.com
           controlPlane:
             name: master
             replicas: 3
