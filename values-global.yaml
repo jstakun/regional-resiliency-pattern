@@ -51,20 +51,16 @@ regionalDR:
           baseDomain: sandbox307.opentlc.com
           controlPlane:
             name: master
-            replicas: 1
+            replicas: 3
             platform:
               aws:
                 type: m6i.2xlarge
-                zones:
-                  - eu-central-1a
           compute:
             - name: worker
-              replicas: 3
+              replicas: 0
               platform:
                 aws:
                   type: m6i.2xlarge
-                  zones:
-                    - eu-central-1a
           networking:
             clusterNetwork:
               - cidr: 10.128.0.0/14
@@ -93,20 +89,16 @@ regionalDR:
           baseDomain: sandbox307.opentlc.com
           controlPlane:
             name: master
-            replicas: 1
+            replicas: 3
             platform:
               aws:
                 type: m6i.2xlarge
-                zones:
-                  - eu-central-1a
           compute:
             - name: worker
-              replicas: 3
+              replicas: 0
               platform:
                 aws:
                   type: m6i.2xlarge
-                  zones:
-                    - eu-central-1a
           networking:
             clusterNetwork:
               - cidr: 10.132.0.0/14
@@ -118,7 +110,7 @@ regionalDR:
               - 172.31.0.0/16
           platform:
             aws:
-              region: eu-central-1
+              region: eu-west-1
               userTags:
                 project: ValidatedPatterns
 

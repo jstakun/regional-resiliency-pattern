@@ -9,30 +9,30 @@ odf:
   externalUrl: "https://s3-rgw-openshift-storage"
   mon:
     requests:
-       cpu: 1
+       cpu: 100m
        memory: 2Gi
   mds:
     requests:
-      cpu: 3
+      cpu: 300m
       memory: 8Gi
   mgr:
     requests:
-      cpu: 1
+      cpu: 100m
       memory: 3Gi
   noobaacore:
     requests:
-      cpu: 1
+      cpu: 100m
       memory: 4Gi
   noobaadb:
     requests:
-      cpu: 1
+      cpu: 100m
       memory: 4Gi
   osd:
     requests:
-      cpu: 2
+      cpu: 200m
       memory: 5Gi
     pvc:
-      storage: 2Ti
+      storage: 512Mi
   storageClass:
     name: ocs-storagecluster-ceph-rgw
     # name: openshift-storage.noobaa.io
