@@ -110,7 +110,7 @@ regionalDR:
               - 172.31.0.0/16
           platform:
             aws:
-              region: eu-west-1
+              region: eu-north-1
               userTags:
                 project: ValidatedPatterns
 
