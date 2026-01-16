@@ -10,27 +10,27 @@ odf:
   mon:
     requests:
        cpu: 100m
-       memory: 2Gi
+       memory: 1Gi
   mds:
     requests:
       cpu: 300m
-      memory: 8Gi
+      memory: 2Gi
   mgr:
     requests:
       cpu: 100m
-      memory: 3Gi
+      memory: 1Gi
   noobaacore:
     requests:
       cpu: 100m
-      memory: 4Gi
+      memory: 1Gi
   noobaadb:
     requests:
       cpu: 100m
-      memory: 4Gi
+      memory: 1Gi
   osd:
     requests:
       cpu: 200m
-      memory: 5Gi
+      memory: 2Gi
     pvc:
       storage: 512Mi
   storageClass:
