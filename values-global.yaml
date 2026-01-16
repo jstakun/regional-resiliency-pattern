@@ -51,13 +51,13 @@ regionalDR:
           baseDomain: sandbox3331.opentlc.com
           controlPlane:
             name: master
-            replicas: 3
+            replicas: 1
             platform:
               aws:
                 type: m6i.2xlarge
           compute:
             - name: worker
-              replicas: 0
+              replicas: 3
               platform:
                 aws:
                   type: m6i.2xlarge
@@ -89,13 +89,13 @@ regionalDR:
           baseDomain: sandbox3331.opentlc.com
           controlPlane:
             name: master
-            replicas: 3
+            replicas: 1
             platform:
               aws:
                 type: m6i.2xlarge
           compute:
             - name: worker
-              replicas: 0
+              replicas: 3
               platform:
                 aws:
                   type: m6i.2xlarge

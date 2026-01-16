@@ -1,0 +1,12 @@
+apiVersion: ramendr.openshift.io/v1alpha1
+kind: DRPolicy
+metadata:
+  name: resilient-drsync-1m
+spec:
+  drClusters:
+    - ocp-primary
+    - ocp-secondary
+  replicationClassSelector: {}
+  schedulingInterval: 1m
+  volumeSnapshotClassSelector: {}
+
