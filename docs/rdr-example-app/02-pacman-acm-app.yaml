@@ -26,7 +26,7 @@ metadata:
   namespace: pacman-acm
 spec:
   type: Git
-  pathname: 'https://github.com/RHEcosystemAppEng/demo-example-apps'
+  pathname: 'https://github.com/jstakun/demo-rdr-apps'
 
 ---
 apiVersion: apps.open-cluster-management.io/v1
