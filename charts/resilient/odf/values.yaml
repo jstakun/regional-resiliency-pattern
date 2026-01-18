@@ -32,7 +32,7 @@ odf:
       cpu: 200m
       memory: 2Gi
     pvc:
-      storage: 512Mi
+      storage: 256Gi
   storageClass:
     name: ocs-storagecluster-ceph-rgw
     # name: openshift-storage.noobaa.io
