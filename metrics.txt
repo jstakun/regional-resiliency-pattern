@@ -1,0 +1,14 @@
+https://docs.redhat.com/en/documentation/red_hat_openshift_data_foundation/4.20/html/configuring_openshift_data_foundation_disaster_recovery_for_openshift_workloads/monitoring_disaster_recovery_health
+
+HUB:
+
+ramen_last_sync_timestamp_seconds
+ramen_policy_schedule_interval_seconds
+ramen_last_sync_duration_seconds
+ramen_last_sync_data_bytes
+ramen_workload_protection_status 
+
+MANAGED CLUSTERS:
+
+ceph_rbd_mirror_snapshot_sync_bytes
+ceph_rbd_mirror_snapshot_snapshots
